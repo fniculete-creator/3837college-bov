@@ -34,20 +34,28 @@ body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--dark);font-siz
 .toc-nav a:hover,.toc-nav a.toc-active{color:#fff;background:rgba(197,162,88,.18);}
 
 /* ── HERO ── */
-.hero{background:var(--navy);color:#fff;padding:60px 40px 50px;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C5A258' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
-.hero-inner{position:relative;max-width:1100px;margin:0 auto;}
-.confidential{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:500;}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;line-height:1.1;margin-bottom:6px;}
-.hero .address{font-size:22px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:32px;}
-.hero-stats{display:flex;gap:40px;flex-wrap:wrap;}
-.hero-stat .val{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--gold);line-height:1;}
-.hero-stat .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.6);margin-top:4px;}
-.hero-byline{margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;}
-.hero-agents{display:flex;gap:32px;flex-wrap:wrap;}
+.hero{background:linear-gradient(135deg, #0f2640 0%, var(--navy) 40%, #1e4872 100%);color:#fff;padding:80px 40px 64px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C5A258' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+.hero::after{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(197,162,88,.08) 0%,transparent 70%);}
+.hero-inner{position:relative;max-width:1100px;margin:0 auto;text-align:center;}
+.confidential{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:600;display:inline-block;border:1px solid rgba(197,162,88,.35);padding:6px 18px;border-radius:2px;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:700;line-height:1.1;margin-bottom:8px;}
+.hero .address{font-size:20px;font-weight:300;color:rgba(255,255,255,.75);margin-bottom:12px;letter-spacing:.02em;}
+.hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold);font-weight:500;margin-bottom:40px;}
+.hero-stats{display:flex;gap:0;flex-wrap:wrap;justify-content:center;margin:0 auto;max-width:800px;}
+.hero-stat{flex:1;min-width:140px;padding:20px 16px;border-right:1px solid rgba(255,255,255,.1);}
+.hero-stat:last-child{border-right:none;}
+.hero-stat .val{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:var(--gold);line-height:1;}
+.hero-stat .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.5);margin-top:6px;}
+.hero-price{margin-top:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);}
+.hero-price .hp-label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.5);margin-bottom:6px;}
+.hero-price .hp-amount{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;color:var(--gold);line-height:1;}
+.hero-price .hp-sub{font-size:13px;color:rgba(255,255,255,.5);margin-top:8px;}
+.hero-byline{margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:40px;}
+.hero-agents{display:flex;gap:32px;flex-wrap:wrap;justify-content:center;}
 .hero-agent .name{font-weight:600;font-size:15px;}
-.hero-agent .title{font-size:12px;color:rgba(255,255,255,.6);}
-.hero-prepared{font-size:12px;color:rgba(255,255,255,.55);text-align:right;}
+.hero-agent .title{font-size:12px;color:rgba(255,255,255,.55);}
+.hero-prepared{font-size:12px;color:rgba(255,255,255,.5);text-align:center;padding-left:40px;border-left:1px solid rgba(255,255,255,.1);}
 .hero-prepared strong{display:block;font-size:14px;color:#fff;}
 
 /* ── SECTIONS ── */
@@ -207,12 +215,18 @@ section{scroll-margin-top:44px;}
     <div class="confidential">Confidential Broker Opinion of Value</div>
     <h1>3837 College Ave</h1>
     <div class="address">Culver City, CA 90232</div>
+    <div class="hero-subtitle">Infill Development Site &mdash; CCR4 High-Density Multifamily</div>
     <div class="hero-stats">
       <div class="hero-stat"><div class="val">7,499</div><div class="lbl">Lot SF</div></div>
       <div class="hero-stat"><div class="val">CCR4</div><div class="lbl">Zoning</div></div>
       <div class="hero-stat"><div class="val">18</div><div class="lbl">Buildable Units</div></div>
       <div class="hero-stat"><div class="val">0.17</div><div class="lbl">Acres</div></div>
       <div class="hero-stat"><div class="val">~0.4 mi</div><div class="lbl">to E-Line Metro</div></div>
+    </div>
+    <div class="hero-price">
+      <div class="hp-label">Suggested List Price</div>
+      <div class="hp-amount">$2,000,000</div>
+      <div class="hp-sub">$267/SF &nbsp;|&nbsp; $111K/Buildable Unit &nbsp;|&nbsp; Trade Range: $1.8M &ndash; $2.0M</div>
     </div>
     <div class="hero-byline">
       <div class="hero-agents">
